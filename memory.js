@@ -59,36 +59,35 @@ for(i=0; i<arr.length; i++){
 }
 //console.log(pos1);
 //console.log(pos2);
-
+/*
 m=0;
 // u=0;
  lol = setInterval(function(){
    triggerMouseEvent(out[pos1[m]].getElementsByTagName('li')[pos2[m]],"mousedown");
    m++;
-   if(m==24){
+   if(m==36){
      clearInterval(lol);
    }
  }, 800);
-
+*/
 
 
 //optimisation
-/*
+
 m=0;
 
  toolol = setInterval(function(){
-   lolt = setTimeout(function(){
+   lolt = setInterval(function(){
    triggerMouseEvent(out[pos1[m]].getElementsByTagName('li')[pos2[m]],"mousedown");
    m++;
- }, 200);
-   lolt = setTimeout(function(){
-   triggerMouseEvent(out[pos1[m]].getElementsByTagName('li')[pos2[m]],"mousedown");
-   m++;
- }, 300);
-   if(m==24){
-     clearInterval(toolol);
+   if(m%2==0){
+     clearInterval(lolt);
    }
-}, 800);
+ }, 0);
+   if(m>35){
+    clearInterval(toolol);
+   }
+}, 750);
 
-*/
+
 
